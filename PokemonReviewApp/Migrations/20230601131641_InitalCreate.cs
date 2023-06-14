@@ -190,7 +190,6 @@ namespace PokemonReviewApp.Migrations
                 table: "Reviews",
                 column: "ReviewerId");
         }
-
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {

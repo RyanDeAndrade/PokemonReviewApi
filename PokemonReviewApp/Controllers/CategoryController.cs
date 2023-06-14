@@ -61,6 +61,5 @@ namespace PokemonReviewApp.Controllers
             return Ok(pokemons);
         }
         
-
     }
 }
