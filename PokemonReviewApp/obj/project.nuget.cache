@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UNg8nQfP+2f1rgz+tN7+/HEZpQ+RggBKY65LqWwD7kzo6kz0JP4b2o8nqGMd+y1JhoKueC/M6PrwqAnr+WcEYQ==",
+  "dgSpecHash": "/t6cGGeaiJwPFleLYAJaWSQwdf+hLCYNPN/yzdBYV/IEzE3kOiHhBr4YyGO4mw05kfTvTGkULcGm5WaiNMuJKg==",
   "success": true,
   "projectFilePath": "C:\\Users\\rr976\\source\\repos\\PokemonReviewApp\\PokemonReviewApp\\PokemonReviewApp.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,11 @@
     "C:\\Users\\rr976\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\rr976\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\rr976\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\rr976\\.nuget\\packages\\entityframeworkcore.data.querybuilder\\7.0.9\\entityframeworkcore.data.querybuilder.7.0.9.nupkg.sha512",
+    "C:\\Users\\rr976\\.nuget\\packages\\entityframeworkcore.data.querybuilder.abstractions\\7.0.9\\entityframeworkcore.data.querybuilder.abstractions.7.0.9.nupkg.sha512",
     "C:\\Users\\rr976\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\rr976\\.nuget\\packages\\linqkit.core\\1.2.4\\linqkit.core.1.2.4.nupkg.sha512",
+    "C:\\Users\\rr976\\.nuget\\packages\\linqkit.microsoft.entityframeworkcore\\7.1.4\\linqkit.microsoft.entityframeworkcore.7.1.4.nupkg.sha512",
     "C:\\Users\\rr976\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
     "C:\\Users\\rr976\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\rr976\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

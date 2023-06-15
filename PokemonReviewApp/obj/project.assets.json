@@ -87,6 +87,39 @@
           }
         }
       },
+      "EntityFrameworkCore.Data.QueryBuilder/7.0.9": {
+        "type": "package",
+        "dependencies": {
+          "EntityFrameworkCore.Data.QueryBuilder.Abstractions": "7.0.9",
+          "LinqKit.Microsoft.EntityFrameworkCore": "7.1.4"
+        },
+        "compile": {
+          "lib/net7.0/EntityFrameworkCore.QueryBuilder.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/EntityFrameworkCore.QueryBuilder.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EntityFrameworkCore.Data.QueryBuilder.Abstractions/7.0.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.5"
+        },
+        "compile": {
+          "lib/net7.0/EntityFrameworkCore.QueryBuilder.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/EntityFrameworkCore.QueryBuilder.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -96,6 +129,36 @@
         },
         "runtime": {
           "lib/net6.0/Humanizer.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LinqKit.Core/1.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/LinqKit.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/LinqKit.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LinqKit.Microsoft.EntityFrameworkCore/7.1.4": {
+        "type": "package",
+        "dependencies": {
+          "LinqKit.Core": "1.2.4",
+          "Microsoft.EntityFrameworkCore": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/LinqKit.Microsoft.EntityFrameworkCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/LinqKit.Microsoft.EntityFrameworkCore.dll": {
             "related": ".xml"
           }
         }
@@ -1409,6 +1472,32 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
+    "EntityFrameworkCore.Data.QueryBuilder/7.0.9": {
+      "sha512": "8RJvb51O/55qx6cjv7bJXBJhgq8XvydyV4Hu8HwXZml7tJL9vudQCidrjB3Bn2a5ob8gjBh+VST0qqu3MrdbtA==",
+      "type": "package",
+      "path": "entityframeworkcore.data.querybuilder/7.0.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "entityframeworkcore.data.querybuilder.7.0.9.nupkg.sha512",
+        "entityframeworkcore.data.querybuilder.nuspec",
+        "lib/net7.0/EntityFrameworkCore.QueryBuilder.dll",
+        "lib/net7.0/EntityFrameworkCore.QueryBuilder.xml"
+      ]
+    },
+    "EntityFrameworkCore.Data.QueryBuilder.Abstractions/7.0.9": {
+      "sha512": "13ttZu5UzvSpi6MbS8cy0J75Ao1wxr9a4E7eTGHeRCo3j6Zver6ujLi3HHH2LnPeUzVzZJZJ/DgIC/XkpneB/Q==",
+      "type": "package",
+      "path": "entityframeworkcore.data.querybuilder.abstractions/7.0.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "entityframeworkcore.data.querybuilder.abstractions.7.0.9.nupkg.sha512",
+        "entityframeworkcore.data.querybuilder.abstractions.nuspec",
+        "lib/net7.0/EntityFrameworkCore.QueryBuilder.Abstractions.dll",
+        "lib/net7.0/EntityFrameworkCore.QueryBuilder.Abstractions.xml"
+      ]
+    },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -1425,6 +1514,51 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "LinqKit.Core/1.2.4": {
+      "sha512": "cR88ymKSFZu1XZnmUzGl8eyeLRqnpiTMZBf+DBSr4kWRmfr40mwNdyLooCe3Or/WbkkmCo5erypLdmZTsNXi+w==",
+      "type": "package",
+      "path": "linqkit.core/1.2.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/LinqKit.Core.dll",
+        "lib/net35/LinqKit.Core.xml",
+        "lib/net40/LinqKit.Core.dll",
+        "lib/net40/LinqKit.Core.xml",
+        "lib/net45/LinqKit.Core.dll",
+        "lib/net45/LinqKit.Core.xml",
+        "lib/netstandard1.3/LinqKit.Core.dll",
+        "lib/netstandard1.3/LinqKit.Core.xml",
+        "lib/netstandard2.0/LinqKit.Core.dll",
+        "lib/netstandard2.0/LinqKit.Core.xml",
+        "lib/netstandard2.1/LinqKit.Core.dll",
+        "lib/netstandard2.1/LinqKit.Core.xml",
+        "lib/portable40-net40+sl5+win8+wp8+wpa81/LinqKit.Core.dll",
+        "lib/portable40-net40+sl5+win8+wp8+wpa81/LinqKit.Core.xml",
+        "lib/portable45-net45+win8+wp8+wpa81/LinqKit.Core.dll",
+        "lib/portable45-net45+win8+wp8+wpa81/LinqKit.Core.xml",
+        "lib/uap10.0.10240/LinqKit.Core.dll",
+        "lib/uap10.0.10240/LinqKit.Core.pri",
+        "lib/uap10.0.10240/LinqKit.Core.xml",
+        "linqkit.core.1.2.4.nupkg.sha512",
+        "linqkit.core.nuspec"
+      ]
+    },
+    "LinqKit.Microsoft.EntityFrameworkCore/7.1.4": {
+      "sha512": "Bsq1/HXOC29GjviRq971qYz3/+9GWKEKO4QdoaEjMt5HHHx8b4yHL8RGzohdiqjTjOOVM5oZF9eaOpLcFu8uUA==",
+      "type": "package",
+      "path": "linqkit.microsoft.entityframeworkcore/7.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/LinqKit.Microsoft.EntityFrameworkCore.dll",
+        "lib/net6.0/LinqKit.Microsoft.EntityFrameworkCore.xml",
+        "lib/net7.0/LinqKit.Microsoft.EntityFrameworkCore.dll",
+        "lib/net7.0/LinqKit.Microsoft.EntityFrameworkCore.xml",
+        "linqkit.microsoft.entityframeworkcore.7.1.4.nupkg.sha512",
+        "linqkit.microsoft.entityframeworkcore.nuspec"
       ]
     },
     "Microsoft.AspNetCore.OpenApi/7.0.5": {
@@ -4078,6 +4212,7 @@
       "AutoMapper >= 12.0.1",
       "AutoMapper.Collection >= 9.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
+      "EntityFrameworkCore.Data.QueryBuilder >= 7.0.9",
       "Microsoft.AspNetCore.OpenApi >= 7.0.5",
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.5",
@@ -4144,6 +4279,10 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[12.0.1, )"
+          },
+          "EntityFrameworkCore.Data.QueryBuilder": {
+            "target": "Package",
+            "version": "[7.0.9, )"
           },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",

@@ -12,7 +12,7 @@ namespace PokemonReviewApp.Controllers
     [ApiController]
     public class PokemonController : Controller
     {
-        private const string V = "{pokeId}";
+        
         private readonly IPokemonRepository _pokemonRepository;
         private readonly IMapper _mapper;
 
