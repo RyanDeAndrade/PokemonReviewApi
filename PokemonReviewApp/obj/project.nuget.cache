@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8Mk5Ebpti5MmA2cw25MAstQy2pE+TU1tIA94HWinFAKH1fe/eA2Ejjr1z2avd24ebTE4iCN/T4agJMaHdJkgmQ==",
+  "dgSpecHash": "oEiCWG0lm6ntXx7a6mCSUhxP7TfImtfv8Olb4jzI3Xgy96Nlcia9crzNaK+SSF8ZyJdESI71T2+ZDbc0LZ3vZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nubia Veloso\\Source\\Repos\\PokemonReviewApi\\PokemonReviewApp\\PokemonReviewApp.csproj",
+  "projectFilePath": "C:\\Users\\Nubia Veloso\\Source\\Repos\\PokemonReviewApi1\\PokemonReviewApp\\PokemonReviewApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nubia Veloso\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Nubia Veloso\\.nuget\\packages\\automapper.collection\\9.0.0\\automapper.collection.9.0.0.nupkg.sha512",

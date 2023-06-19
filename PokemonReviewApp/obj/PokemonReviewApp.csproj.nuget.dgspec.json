@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nubia Veloso\\Source\\Repos\\PokemonReviewApi\\PokemonReviewApp\\PokemonReviewApp.csproj": {}
+    "C:\\Users\\Nubia Veloso\\Source\\Repos\\PokemonReviewApi1\\PokemonReviewApp\\PokemonReviewApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nubia Veloso\\Source\\Repos\\PokemonReviewApi\\PokemonReviewApp\\PokemonReviewApp.csproj": {
+    "C:\\Users\\Nubia Veloso\\Source\\Repos\\PokemonReviewApi1\\PokemonReviewApp\\PokemonReviewApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nubia Veloso\\Source\\Repos\\PokemonReviewApi\\PokemonReviewApp\\PokemonReviewApp.csproj",
+        "projectUniqueName": "C:\\Users\\Nubia Veloso\\Source\\Repos\\PokemonReviewApi1\\PokemonReviewApp\\PokemonReviewApp.csproj",
         "projectName": "PokemonReviewApp",
-        "projectPath": "C:\\Users\\Nubia Veloso\\Source\\Repos\\PokemonReviewApi\\PokemonReviewApp\\PokemonReviewApp.csproj",
+        "projectPath": "C:\\Users\\Nubia Veloso\\Source\\Repos\\PokemonReviewApi1\\PokemonReviewApp\\PokemonReviewApp.csproj",
         "packagesPath": "C:\\Users\\Nubia Veloso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nubia Veloso\\Source\\Repos\\PokemonReviewApi\\PokemonReviewApp\\obj\\",
+        "outputPath": "C:\\Users\\Nubia Veloso\\Source\\Repos\\PokemonReviewApi1\\PokemonReviewApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
