@@ -11,6 +11,7 @@
           "AutoMapper": "12.0.1",
           "AutoMapper.Collection": "9.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "EntityFrameworkCore.Data.QueryBuilder": "7.0.9",
           "Microsoft.AspNetCore.OpenApi": "7.0.5",
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.Design": "7.0.5",
@@ -91,11 +92,54 @@
           }
         }
       },
+      "EntityFrameworkCore.Data.QueryBuilder/7.0.9": {
+        "dependencies": {
+          "EntityFrameworkCore.Data.QueryBuilder.Abstractions": "7.0.9",
+          "LinqKit.Microsoft.EntityFrameworkCore": "7.1.4"
+        },
+        "runtime": {
+          "lib/net7.0/EntityFrameworkCore.QueryBuilder.dll": {
+            "assemblyVersion": "7.0.9.0",
+            "fileVersion": "7.0.9.0"
+          }
+        }
+      },
+      "EntityFrameworkCore.Data.QueryBuilder.Abstractions/7.0.9": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.5"
+        },
+        "runtime": {
+          "lib/net7.0/EntityFrameworkCore.QueryBuilder.Abstractions.dll": {
+            "assemblyVersion": "7.0.9.0",
+            "fileVersion": "7.0.9.0"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "runtime": {
           "lib/net6.0/Humanizer.dll": {
             "assemblyVersion": "2.14.0.0",
             "fileVersion": "2.14.1.48190"
+          }
+        }
+      },
+      "LinqKit.Core/1.2.4": {
+        "runtime": {
+          "lib/netstandard2.1/LinqKit.Core.dll": {
+            "assemblyVersion": "1.2.4.0",
+            "fileVersion": "1.2.4.0"
+          }
+        }
+      },
+      "LinqKit.Microsoft.EntityFrameworkCore/7.1.4": {
+        "dependencies": {
+          "LinqKit.Core": "1.2.4",
+          "Microsoft.EntityFrameworkCore": "7.0.5"
+        },
+        "runtime": {
+          "lib/net7.0/LinqKit.Microsoft.EntityFrameworkCore.dll": {
+            "assemblyVersion": "7.1.4.0",
+            "fileVersion": "7.1.4.0"
           }
         }
       },
@@ -790,12 +834,40 @@
       "path": "azure.identity/1.6.0",
       "hashPath": "azure.identity.1.6.0.nupkg.sha512"
     },
+    "EntityFrameworkCore.Data.QueryBuilder/7.0.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8RJvb51O/55qx6cjv7bJXBJhgq8XvydyV4Hu8HwXZml7tJL9vudQCidrjB3Bn2a5ob8gjBh+VST0qqu3MrdbtA==",
+      "path": "entityframeworkcore.data.querybuilder/7.0.9",
+      "hashPath": "entityframeworkcore.data.querybuilder.7.0.9.nupkg.sha512"
+    },
+    "EntityFrameworkCore.Data.QueryBuilder.Abstractions/7.0.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-13ttZu5UzvSpi6MbS8cy0J75Ao1wxr9a4E7eTGHeRCo3j6Zver6ujLi3HHH2LnPeUzVzZJZJ/DgIC/XkpneB/Q==",
+      "path": "entityframeworkcore.data.querybuilder.abstractions/7.0.9",
+      "hashPath": "entityframeworkcore.data.querybuilder.abstractions.7.0.9.nupkg.sha512"
+    },
     "Humanizer.Core/2.14.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
+    },
+    "LinqKit.Core/1.2.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cR88ymKSFZu1XZnmUzGl8eyeLRqnpiTMZBf+DBSr4kWRmfr40mwNdyLooCe3Or/WbkkmCo5erypLdmZTsNXi+w==",
+      "path": "linqkit.core/1.2.4",
+      "hashPath": "linqkit.core.1.2.4.nupkg.sha512"
+    },
+    "LinqKit.Microsoft.EntityFrameworkCore/7.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Bsq1/HXOC29GjviRq971qYz3/+9GWKEKO4QdoaEjMt5HHHx8b4yHL8RGzohdiqjTjOOVM5oZF9eaOpLcFu8uUA==",
+      "path": "linqkit.microsoft.entityframeworkcore/7.1.4",
+      "hashPath": "linqkit.microsoft.entityframeworkcore.7.1.4.nupkg.sha512"
     },
     "Microsoft.AspNetCore.OpenApi/7.0.5": {
       "type": "package",

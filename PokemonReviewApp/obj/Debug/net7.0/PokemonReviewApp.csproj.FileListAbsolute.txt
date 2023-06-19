@@ -80,3 +80,7 @@ C:\Users\rr976\source\repos\PokemonReviewApp\PokemonReviewApp\bin\Debug\net7.0\r
 C:\Users\rr976\source\repos\PokemonReviewApp\PokemonReviewApp\bin\Debug\net7.0\AutoMapper.dll
 C:\Users\rr976\source\repos\PokemonReviewApp\PokemonReviewApp\bin\Debug\net7.0\AutoMapper.Collection.dll
 C:\Users\rr976\source\repos\PokemonReviewApp\PokemonReviewApp\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\rr976\source\repos\PokemonReviewApp\PokemonReviewApp\bin\Debug\net7.0\EntityFrameworkCore.QueryBuilder.dll
+C:\Users\rr976\source\repos\PokemonReviewApp\PokemonReviewApp\bin\Debug\net7.0\EntityFrameworkCore.QueryBuilder.Abstractions.dll
+C:\Users\rr976\source\repos\PokemonReviewApp\PokemonReviewApp\bin\Debug\net7.0\LinqKit.Core.dll
+C:\Users\rr976\source\repos\PokemonReviewApp\PokemonReviewApp\bin\Debug\net7.0\LinqKit.Microsoft.EntityFrameworkCore.dll
