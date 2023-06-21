@@ -95,7 +95,6 @@ namespace PokemonReviewApp.Controllers
             if (!_pokemonRepository.CreatePokemon(ownerId, catId, pokemonMap))
             {
                 ModelState.AddModelError("", "Somenthing went wrong while savin");
-
                 return StatusCode(500, ModelState);
             }
 
