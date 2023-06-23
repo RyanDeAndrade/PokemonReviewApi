@@ -16,7 +16,6 @@ namespace PokemonReviewApp.Repository
             _context = context;
             _mapper = mapper;
         }
-
         public bool CreateReviewer(Reviewer reviewer)
         {
             _context.Add(reviewer);
@@ -39,7 +38,6 @@ namespace PokemonReviewApp.Repository
         {
             return _context.Reviewers.Any(r => r.Id == reviewerId);
         }
-
         public bool Save()
         {
             var saved = _context.SaveChanges();
