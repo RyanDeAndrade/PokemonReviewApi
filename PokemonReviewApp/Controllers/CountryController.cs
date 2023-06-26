@@ -102,23 +102,23 @@ namespace PokemonReviewApp.Controllers
         [ProducesResponseType(400)]
         [ProducesResponseType(204)]
         [ProducesResponseType(404)]
-        public IActionResult UpdateCountry(int countryId, [FromBody] CountryDto updateCountry)
+        public IActionResult UpdateCountry(int countryId, [FromBody] CountryDto updatedCountry)
         {
-            if (updateCountry == null)
+            if (updatedCountry == null)
                 return BadRequest(ModelState);
 
-            if (countryId != updateCountry.Id)
+            if (countryId != updatedCountry.Id)
                 return BadRequest(ModelState);
 
             if (!_countryRepository.CountryExists(countryId))
                 return NotFound();
 
             if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+                return BadRequest();
 
-            var countryMap = _mapper.Map<Country>(updateCountry);
+            var countryMap = _mapper.Map<Country>(updatedCountry);
 
-            if (!_countryRepository.CreateCountry(countryMap))
+            if (!_countryRepository.UpdateCountry(countryMap))
             {
                 ModelState.AddModelError("", "Somenthing went wrong updating category");
                 return StatusCode(500, ModelState);
