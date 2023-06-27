@@ -89,12 +89,10 @@ namespace PokemonReviewApp.Controllers
                 ModelState.AddModelError("", "Owner already exists");
                 return StatusCode(422, ModelState);
             }
-
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
             var pokemonMap = _mapper.Map<Pokemon>(pokemonCreate);
-
 
             if (!_pokemonRepository.CreatePokemon(ownerId, catId, pokemonMap))
             {
@@ -105,8 +103,7 @@ namespace PokemonReviewApp.Controllers
             return Ok("Successfully created");
         }
 
-
-        [HttpPost("{PokeId}")]
+        [HttpPut("{PokeId}")]
         [ProducesResponseType(400)]
         [ProducesResponseType(204)]
         [ProducesResponseType(404)]
@@ -133,6 +130,37 @@ namespace PokemonReviewApp.Controllers
                 ModelState.AddModelError("", "Somenthing went wrong updating pokemon");
                 return StatusCode(500, ModelState);
             }
+            return NoContent();
+        }
+
+        [HttpDelete("{pokeId}")]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(204)]
+
+        public IActionResult DeleteOwner(int pokeId)
+        {
+            if (!_pokemonRepository.PokemonExists(pokeId))
+            {
+                return NotFound();
+            }
+
+            var reviewsToDelete = _reviewRepository.GetAllReviewsOfAPokemon(pokeId);
+            var pokemonToDelete = _pokemonRepository.GetPokemon(pokeId);
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            if (!_reviewRepository.DeleteReviews(reviewsToDelete.ToList()))
+
+            {
+                ModelState.AddModelError("", "something went wrong deleteting pokemon");
+            }
+            if (!_pokemonRepository.DeletePokemon(pokemonToDelete))
+            {
+                ModelState.AddModelError("", "something went wrong deleteting pokemon");
+            }
+
             return NoContent();
         }
     }

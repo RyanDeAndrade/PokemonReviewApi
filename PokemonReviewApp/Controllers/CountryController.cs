@@ -64,7 +64,6 @@ namespace PokemonReviewApp.Controllers
 
             return Ok(country);
         }
-
         [HttpPost]
         [ProducesResponseType(204)]
         [ProducesResponseType(400)]
@@ -87,18 +86,15 @@ namespace PokemonReviewApp.Controllers
                 return BadRequest(ModelState);
 
             var countryMap = _mapper.Map<Country>(countryCreate);
-
             if (!_countryRepository.CreateCountry(countryMap))
             {
                 ModelState.AddModelError("", "Somenthing went wrong while savin");
 
                 return StatusCode(500, ModelState);
             }
-
             return Ok("Successfully created");
         }
-
-        [HttpPost("{countryId}")]
+        [HttpPut("{countryId}")]
         [ProducesResponseType(400)]
         [ProducesResponseType(204)]
         [ProducesResponseType(404)]
@@ -123,6 +119,31 @@ namespace PokemonReviewApp.Controllers
                 ModelState.AddModelError("", "Somenthing went wrong updating category");
                 return StatusCode(500, ModelState);
             }
+            return NoContent();
+        }
+
+        [HttpDelete("{countryId}")]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(204)]
+
+        public IActionResult DeleteCountry(int countryId)
+        {
+            if (!_countryRepository.CountryExists(countryId))
+            {
+                return NotFound();
+            }
+
+            var countryToDelete = _countryRepository.GetCountry(countryId);
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            if (!_countryRepository.DeleteCountry(countryToDelete))
+            {
+                ModelState.AddModelError("", "something went wrong deleteting country");
+            }
+
             return NoContent();
         }
     }
