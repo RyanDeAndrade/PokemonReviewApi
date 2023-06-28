@@ -30,7 +30,7 @@ namespace PokemonReviewApp.Repository
 
         public bool DeleteReviews(List<Review> reviews)
         {
-            _context.Remove(reviews);
+            _context.RemoveRange(reviews);
             return Save();
         }
         public Review GetReview(int reviewId)

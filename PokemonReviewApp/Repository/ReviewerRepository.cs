@@ -16,28 +16,44 @@ namespace PokemonReviewApp.Repository
             _context = context;
             _mapper = mapper;
         }
+
         public bool CreateReviewer(Reviewer reviewer)
         {
             _context.Add(reviewer);
             return Save();
         }
+
+        public bool DeleteReviewer(Reviewer reviewer)
+        {
+            _context.Remove(reviewer);
+            return Save();
+        }
+
+        public ICollection<Reviewer> GetAllReviewsByReviewer(int reviewerId)
+        {
+            throw new NotImplementedException();
+        }
+
         public Reviewer GetReviewer(int reviewerId)
         {
             return _context.Reviewers.Where(r => r.Id == reviewerId).Include(e => e.Reviews).FirstOrDefault();
         }
+
         public ICollection<Reviewer> GetReviewers()
         {
             return _context.Reviewers.ToList();
         }
-        public ICollection<Reviewer> GetAllReviewsByReviewer(int reviewerId)
+
+        public ICollection<Review> GetReviewsByReviewer(int reviewerId)
         {
-            return _context.Reviewers.Where(r => r.Id == reviewerId).ToList();
-            //r => r.Reviewers.Id == reviewerId
+            return _context.Reviews.Where(r => r.Reviewer.Id == reviewerId).ToList();
         }
+
         public bool ReviewerExists(int reviewerId)
         {
             return _context.Reviewers.Any(r => r.Id == reviewerId);
         }
+
         public bool Save()
         {
             var saved = _context.SaveChanges();
@@ -46,7 +62,7 @@ namespace PokemonReviewApp.Repository
 
         public bool UpdateReviewer(Reviewer reviewer)
         {
-           _context.Update(reviewer);
+            _context.Update(reviewer);
             return Save();
         }
     }

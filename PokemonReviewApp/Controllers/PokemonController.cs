@@ -138,7 +138,7 @@ namespace PokemonReviewApp.Controllers
         [ProducesResponseType(200)]
         [ProducesResponseType(204)]
 
-        public IActionResult DeleteOwner(int pokeId)
+        public IActionResult DeletePokemon(int pokeId)
         {
             if (!_pokemonRepository.PokemonExists(pokeId))
             {
