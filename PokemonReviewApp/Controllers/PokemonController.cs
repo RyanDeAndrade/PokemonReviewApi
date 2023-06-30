@@ -142,7 +142,7 @@ namespace PokemonReviewApp.Controllers
         {
             if (!_pokemonRepository.PokemonExists(pokeId))
             {
-                return NotFound();
+                return NotFound(); 
             }
 
             var reviewsToDelete = _reviewRepository.GetAllReviewsOfAPokemon(pokeId);

@@ -10,7 +10,7 @@ namespace PokemonReviewApp.Repository
         private DataContext _context;   
         public CategoryRepository(DataContext context)
         {
-            _context = context;
+            _context = context; 
         }
         public bool CategoryExists(int Id)
         {

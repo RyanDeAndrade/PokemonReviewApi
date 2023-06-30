@@ -130,7 +130,7 @@ namespace PokemonReviewApp.Controllers
                 ModelState.AddModelError("", "Somenthing went wrong updating owner");
                 return StatusCode(500, ModelState);
             }
-            return NoContent();
+            return NoContent(); 
         }
 
         [HttpDelete("{ownerId}")]

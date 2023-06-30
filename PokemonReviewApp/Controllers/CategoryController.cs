@@ -66,11 +66,11 @@ namespace PokemonReviewApp.Controllers
         public IActionResult CreateCategory([FromBody] CategoryDto categoryCreate)
         {
             if (categoryCreate == null)
-                return BadRequest(ModelState);
+                return BadRequest(ModelState); 
 
             var category = _categoryRepository.GetCategories()
-                .Where(c => c.Name.Trim().ToUpper() == categoryCreate.Name.TrimEnd().ToUpper())
-                .FirstOrDefault();
+                .Where(c => c.Name.Trim().ToUpper() == categoryCreate.Name.TrimEnd().ToUpper()) 
+                .FirstOrDefault(); 
 
             if (category != null)
             {
